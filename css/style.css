@@ -1,0 +1,322 @@
+:root{
+    --blue-color:#0078FF;
+}
+.font-whaight{
+    font-weight: 600;
+}
+.typing{
+    height: 2rem;
+}
+.typed::after{
+    content: "|";
+    font-weight: 600;
+}
+html{
+    scroll-padding-top: 50px;
+}
+.dropdown-menu a:hover{
+    color: #0078FF;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+.dropdown:hover > .dropdown-menu{
+    display: block;
+    margin-left:0;
+}
+.dropend:hover > .dropdown-menu{
+    display: block;
+    margin-top: -1rem;
+    margin-left: 0;
+}
+.nav-link{
+    margin-right: 10px !important;
+}
+#about .container{
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+}
+.before::after{
+    content: "" !important;
+    width: 105%;
+    height: 3px !important;
+    background-color:var(--blue-color) !important;
+    position: absolute;
+    top: 110%;
+    left: 0px;
+}
+.up{
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--blue-color);
+    color: #ffffff;
+    position: sticky;
+    top: 92%;
+    left: 96.5%;
+    text-decoration: none;
+    z-index: 99;
+}
+.up i{
+    font-size: 1.2rem !important;
+    
+}
+.nav-link{
+    overflow: hidden;
+}
+.nav-link::before{
+    content: "";
+    width: 100% !important;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 90%;
+    left: -100%;
+}
+.nav-item:hover .nav-link::before{
+    left: 0%;
+    transition: all 0.5s linear;
+}
+nav .active::before{
+    left: 0%;
+    transition: left 0.7s linear;
+}
+.title h3{
+    font-weight: 700;
+    font-size: 3rem;
+    width: 25%;
+}
+.title h3::before{
+    content: ""!important;
+    width: 50px;
+    height: 3px!important;
+    background-color:var(--blue-color)!important;
+    position: absolute;
+    top: 190%;
+    left: 50%;
+    transform: translateX(-50%) !important;
+}
+/* ----------------- */
+.content p{
+    width: 90%;
+}
+.content span{
+    width: 6rem !important;
+    height: 6rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5rem solid var(--blue-color);
+    transition: all 0.2s ease-in;
+}
+.content:hover span{
+    border:0.5rem solid #CDE1F8;
+    background: var(--blue-color);
+}
+.content i{
+    transition: all 0.2s ease-in;
+}
+.content:hover i{
+    color: white;
+}
+/*  ------*/
+.counter{
+    background: url(../images/counters-bg.jpg)  ;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.counter .layer{
+    background:#0077ffb9;
+}
+.counter .layer .count .circle{
+    width: 5rem !important;
+    height: 5rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:0.5rem solid #CDE1F8;
+}
+.fs-7{
+    font-size: 0.75rem;
+}
+.pluas{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+}
+.card img{
+    transition: transform 0.6s ease-out;
+}
+#work .card:hover img{
+    transform: scale(1.3);
+}
+.carosell img{
+    width: 10rem;
+    height: 10rem;
+}
+.button{
+    width: 0.7rem !important;
+    height: 0.7rem !important;
+}
+.caro{
+    background: url(../images/overlay-bg.jpg) no-repeat center center fixed ;
+}
+.layer{
+    background:#0077ffb9;
+}
+.caro .layer #text{
+    color: #ffffff !important;
+    padding: 0 18rem !important;
+}
+#blog .card-title{
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+#blog .card-title:hover{
+    color:var(--blue-color)
+}
+.card-footer img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.card-footer .side p{
+    transition: color 0.4s linear;
+    cursor: pointer;
+}
+.card-footer .side p:hover{
+    color: #0078FF !important;
+}
+.sss{
+    width: 90%;
+    text-align: center;
+}
+.card-body span{
+    display: inline-block;
+    width: 20%;
+}
+.wids{
+    width: 30% !important;
+}
+#contact{
+    background: url(../images/overlay-bg.jpg) center center no-repeat fixed;
+}
+.under::before{
+    content: "";
+    width: 90%;
+    height: 3px;
+    background-color: var(--blue-color);
+    position: absolute;
+    top: 110%;
+}
+.btn:hover{
+    border: 3px solid #CDE1F8 !important;
+}
+input:focus ,textarea:focus {
+    outline:4px solid #CDE1F8;
+    border: 1px solid #0078FF !important;
+    
+}
+.ptn{
+    border-color: #0078FF;
+    transition: outline  0.2s linear , background-color 0.2s linear;
+}
+.ptn:hover{
+    outline: 5px solid #CDE1F8 !important;
+    background:#3393FF !important;
+}
+.max-width{
+    max-width: 92%;
+}
+.social span{
+    width: 3rem;
+    height: 3rem;
+    border: #0078FF 3.5px solid;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.social span:hover{
+    border: #b7d5f7 4px solid;
+    background: #0078FF;
+}
+.social span i{
+    transition: color 0.3s ease-out;
+}
+.social span:hover i{
+    color: #ffffff;
+}
+footer{
+    background-color: rgb(0, 98, 211);
+    box-shadow: inset 5px 5px 15px rgb(2, 62, 130);
+}
+@media screen and (max-width:1200px){
+    .caro .layer #text{
+        color: #ffffff !important;
+        padding: 0 13rem !important;
+    }
+}
+@media screen  and (max-width:992px){
+    .dropend:hover > .dropdown-menu{
+        margin-top: 0.125rem !important;
+        width: 90% !important;
+        margin: auto !important;
+    } 
+    .dropdown-menu{
+        box-shadow: 0 0 10px #00000071;
+    }
+    nav a{
+        color: black;
+    }
+}
+@media screen and (max-width:992px){
+    .caro .layer #text{
+        color: #ffffff !important;
+        padding: 0 7rem !important;
+    }
+}
+@media screen and (max-width:768px){
+    .caro .layer #text{
+        padding: 0 4.5rem !important;
+    }
+    .saied{
+        display: block !important;
+    }
+    nav .navlink nav .navlink::before, nav .active::before{
+        left: 0;
+    }
+    .nav-link::before{
+        content: "";
+        width: 20% !important;
+        height: 3px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 90%;
+        left: 100%;
+    }
+}
+@media screen and (max-width:600){
+    .caro .layer #text{
+        padding: 0 0rem !important;
+    }
+}
