@@ -40,7 +40,7 @@ header h1{
 .dropend:hover > .dropdown-menu{
     display: block;
     margin-top: -1rem;
-    margin-left: 0;
+    margin-left: 99%;
 }
 .nav-link{
     margin-right: 10px !important;
